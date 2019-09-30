@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'admin@test.com',
         'password' => Hash::make('admin'),
         'role' => 2
+        'admin' => 1
       ]);
 
       User::create([
@@ -27,6 +28,7 @@ class DatabaseSeeder extends Seeder
         'email' => 'cristian@test.com',
         'password' => Hash::make('cristian'),
         'role' => 1
+        'admin' => 0
       ]);
     }
 }
