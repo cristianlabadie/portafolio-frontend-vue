@@ -1,0 +1,86 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+
+$sidebar-size: 260px;
+$header-height: 60px;
+
+
+$amarillo: rgb(255, 250, 112);
+$naranjo: rgb(255, 175, 91);
+$fuccia: rgb(255, 97, 154);
+$verde: #5cb85c;
+$warning: #f0ad4e;
+$primary: #409EFF;
+
+$grey: #333333;
+$white: #FFFFFF;
+
+
+// Body
+$body-bg: #ffffff;
+
+// MIXIN FOR RESPONSIVE CSS GRID;
+// Extra small screen / phone
+
+$xs: 0; // Small screen / phone
+$sm: 480px; // Medium screen / tablet
+$md: 768px; // Large screen / desktop
+$lg: 1024px; // // Extra large screen / wide desktop
+// $xl: 1200px;
+@mixin respond-to($media...) {
+	@for $i from 1 through length($media){
+		@include privat-respond-to(nth($media, $i)) {
+			@content;
+		};
+	}
+}
+@mixin privat-respond-to($current-media) {
+	@if $current-media == 'xs' {
+		@media only screen and (max-width: $sm) {
+			@content;
+		}
+	}
+
+	@else if $current-media == 'sm' {
+		@media only screen and (min-width: $sm + 1) {
+			@content;
+		}
+	}
+
+	@else if $current-media == 'md' {
+		@media only screen and (min-width: $md + 1) {
+			@content;
+		}
+	}
+
+	@else if $current-media == 'lg' {
+		@media only screen and (min-width: $lg + 1) {
+			@content;
+		}
+	}
+
+	@else if $current-media == 'xl' {
+		@media only screen and (min-width: $xl) {
+			@content;
+		}
+	}
+}

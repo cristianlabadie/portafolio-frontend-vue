@@ -1,0 +1,153 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#app {
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  font-size: 1.3em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #333;
+}
+
+h4 {
+  font-size: 1em;
+  color: #333;
+}
+
+table {
+  width: 100%;
+
+  td,
+  th {
+    padding: 10px 2px;
+  }
+}
+
+.btn {
+  i {
+    margin-right: 5px;
+  }
+}
+
+em {
+  font-style: normal;
+  background-color: #999;
+  color: white;
+}
+
+.botones {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.el-dialog__body {
+  padding: 0px 20px 30px 20px;
+}
+
+.pedido {
+  .el-form-item__label {
+    font-size: 11px;
+  }
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.botones_popover {
+}
+
+.el-form-item__label {
+  font-weight: 300;
+}
+
+.el-pagination .el-select .el-input {
+  width: 130px;
+}
+
+.boton {
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.el-cascader-menu {
+  height: 400px;
+}
+
+.el-cascader-menu__item--extensible:after {
+  right: 3px;
+}
+
+.link_pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    box-shadow: 0px 0px 10px -1px #ccc;
+    text-decoration: none;
+  }
+}
+
+.el-icon-office-building {
+  color: red;
+}
+
+.el-icon-delete {
+  color: red;
+}
+
+.el-form--label-top {
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+
+  .el-form-item__label {
+    padding: 0 0 0 5px;
+    line-height: 1;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: #fff url('/images/fondoAzul.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
